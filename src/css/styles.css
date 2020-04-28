@@ -1,0 +1,45 @@
+@import '~antd/dist/antd.css';
+@import 'home.css';
+@import 'footer.css';
+@import 'navbar.css';
+@import 'header-splash.css';
+@import 'tab-bar.css';
+@import 'about-me.css';
+
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-dark: #020202e0;
+    --text-light: #ffffffe0;
+    --accents: #B9732F;
+    --bg-secondary: #437FC7;
+    --bg-primary: #6DAFFE;
+    --bg-tertiary: #EDF6FF;
+    --navbar-text-primary: #b6b6b6;
+    --navbar-text-secondary: #ececec;
+    --navbar-primary: #23232e;
+    --navbar-secondary: #141418;
+    --transition-speed: 600ms;
+
+    --page-width: 950px;
+}
+
+@media only screen and (max-width: 600px) {
+    .root-container {
+        padding: 0;
+        margin: 0;
+    }
+    .page-container {}
+}
+
+/* Large screens */
+
+@media only screen and (min-width: 600px) {
+    .root-container {
+        padding: 0;
+        margin: 0;
+    }
+    .page-container {
+        margin-left: 5rem;
+    }
+}

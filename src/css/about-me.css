@@ -1,0 +1,15 @@
+@media only screen and (max-width: 600px) {
+    .about-me-container {
+        width: var(--page-width);
+        margin: 0px auto 0px auto;
+    }
+}
+
+/* Large screens */
+
+@media only screen and (min-width: 600px) {
+    .about-me-container {
+        width: var(--page-width);
+        margin: 0px auto 0px auto;
+    }
+}

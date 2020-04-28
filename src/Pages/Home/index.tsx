@@ -1,13 +1,20 @@
 import React from 'react';
+import HeaderSplash from '../../LayoutComponents/Header/HeaderSplash';
+import '../../css/styles.css';
+import TabBar from './TabBar';
+import AboutMe from './AboutMe';
 
 function Home() {
     return (
         <div>
-            <h1>This is the home page</h1>
-            <p>This is just a string of random text meants to signify the extreme lack of text generating resources we have on hand to do something of this magnitude. The interesting
-                thing is that this could have all been avoided if text editors like notepadd++ and even mini ide's like vsc could have provided a built in function to generate
-                a seemingly useless chunk of random text to act as placeholder paragraphs.
-        </p>
+            <div className="jumbotron">
+                <div className="jumbotron-text-container">
+                    <h1 className="jumbotron-main-text">The MKJM Progressive Web Application Project</h1>
+                    <p className="jumbotron-sub-text">An experiment in building a modern fully functional Web Application.</p>
+                </div>
+            </div>
+            <TabBar />
+            <AboutMe />
         </div>
     )
 }

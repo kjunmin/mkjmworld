@@ -1,0 +1,30 @@
+@media only screen and (max-width: 600px) {
+    .home-button-tabbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 15vh;
+    }
+    .home-tabbar-item {
+        /* margin: 2rem; */
+    }
+}
+
+/* Large screens */
+
+@media only screen and (min-width: 600px) {
+    .home-button-tabbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 15vh;
+        width: var(--page-width);
+        margin: 0px auto 0px auto;
+    }
+    .home-tabbar-item {
+        color: var(--text-light);
+        background-color: var(--bg-primary);
+    }
+}
