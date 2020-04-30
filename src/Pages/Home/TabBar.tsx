@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import { isMobile } from 'react-device-detect';
-import '../../css/styles.css';
+import '../../css/styles.scss';
 
 function TabBar() {
     return (

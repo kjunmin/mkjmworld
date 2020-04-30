@@ -1,9 +1,9 @@
 import React from 'react';
 import { Tabs } from 'antd';
-import '../../css/styles.css';
+import '../../css/styles.scss';
 import { AppleOutlined, AndroidOutlined, ToolOutlined } from '@ant-design/icons';
 import SkillsGrid from './SkillsGrid';
-import { techSkills, designSkills } from './skills';
+import { techSkills, designSkills, utilitySkills } from './skills';
 import { isMobile } from 'react-device-detect';
 
 
@@ -47,7 +47,7 @@ function Skills() {
                     }
                     key="3"
                 >
-                    <SkillsGrid skills={techSkills} />
+                    <SkillsGrid skills={utilitySkills} />
                 </TabPane>
             </Tabs>
         </div>

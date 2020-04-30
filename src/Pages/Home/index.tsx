@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/styles.css';
+import '../../css/styles.scss';
 import TabBar from './TabBar';
 import AboutMe from './AboutMe';
 import JumbotronSplash from './JumbotronSplash';

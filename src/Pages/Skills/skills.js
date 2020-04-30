@@ -18,6 +18,9 @@ import MayaLogo from '../../resources/img/logo/maya.png';
 import FinalCutLogo from '../../resources/img/logo/finalcut.png';
 import ZeplinLogo from '../../resources/img/logo/zeplin.png';
 import SketchLogo from '../../resources/img/logo/sketch.png';
+import DockerLogo from '../../resources/img/logo/docker.png';
+import GitLogo from '../../resources/img/logo/git.png';
+import AwsLogo from '../../resources/img/logo/aws.svg';
 
 
 export const techSkills = [
@@ -103,5 +106,20 @@ export const designSkills = [
     {
         name: 'Zeplin',
         logo: ZeplinLogo
+    }
+]
+
+export const utilitySkills = [
+    {
+        name: 'Docker',
+        logo: DockerLogo
+    },
+    {
+        name: 'Git',
+        logo: GitLogo
+    },
+    {
+        name: 'Aws',
+        logo: AwsLogo
     }
 ]
