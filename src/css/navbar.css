@@ -19,6 +19,7 @@ body::-webkit-scrollbar-thumb {
 
 
 .navbar {
+  z-index: 1;
   position: fixed;
   background-color: var(--navbar-primary);
   transition: width 600ms ease;
@@ -145,7 +146,6 @@ body::-webkit-scrollbar-thumb {
     top: 0;
     width: 5rem;
     height: 100vh;
-    z-index: 1;
   }
 
   .navbar:hover {

@@ -2,9 +2,10 @@
 @import 'home.css';
 @import 'footer.css';
 @import 'navbar.css';
-@import 'header-splash.css';
 @import 'tab-bar.css';
 @import 'about-me.css';
+@import 'grid.css';
+@import 'skills-tab.css';
 
 :root {
     font-size: 16px;
@@ -20,8 +21,9 @@
     --navbar-primary: #23232e;
     --navbar-secondary: #141418;
     --transition-speed: 600ms;
-
-    --page-width: 950px;
+    --page-content-width-desktop: 60vw;
+    --page-content-width-mobile: 80vw;
+    
 }
 
 @media only screen and (max-width: 600px) {

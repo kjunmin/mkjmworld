@@ -1,0 +1,21 @@
+@media only screen and (max-width: 600px) {
+    .grid-layout-container {
+        display: grid;
+        gap: 1rem;
+        width: var(--page-content-width-mobile);
+        margin: 5rem auto 5rem auto;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+}
+
+/* Large screens */
+
+@media only screen and (min-width: 600px) {
+    .grid-layout-container {
+        display: grid;
+        gap: 1rem;
+        width: var(--page-content-width-desktop);
+        margin: 5rem auto 5rem auto;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+}

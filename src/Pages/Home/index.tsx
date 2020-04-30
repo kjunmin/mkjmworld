@@ -3,6 +3,8 @@ import '../../css/styles.css';
 import TabBar from './TabBar';
 import AboutMe from './AboutMe';
 import JumbotronSplash from './JumbotronSplash';
+import ProjectGrid from './ProjectGrid';
+import Skills from '../Skills';
 
 function Home() {
     return (
@@ -16,8 +18,11 @@ function Home() {
                     <JumbotronSplash />
                 </div>
             </div>
-            <TabBar />
+            {/* <TabBar /> */}
             <AboutMe />
+            <ProjectGrid />
+            {/* <AboutMe /> */}
+            <Skills />
         </div>
     )
 }

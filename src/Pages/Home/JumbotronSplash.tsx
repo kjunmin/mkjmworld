@@ -31,7 +31,7 @@ function JumbotronSplash() {
         ></path>
         <g
           style={{ isolation: "isolate" }}
-          clip-path="url(#f07711eb-e0df-4781-b9ba-30d65d369242)"
+          clipPath="url(#f07711eb-e0df-4781-b9ba-30d65d369242)"
         >
           <path
             fill="#3f9bbd"

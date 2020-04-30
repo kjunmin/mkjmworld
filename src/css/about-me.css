@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
     .about-me-container {
-        width: var(--page-width);
+        width: var(--page-content-width-mobile);
         margin: 0px auto 0px auto;
     }
 }
@@ -9,7 +9,7 @@
 
 @media only screen and (min-width: 600px) {
     .about-me-container {
-        width: var(--page-width);
+        width: var(--page-content-width-desktop);
         margin: 0px auto 0px auto;
     }
 }
