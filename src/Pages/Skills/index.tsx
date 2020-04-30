@@ -15,7 +15,7 @@ function Skills() {
 
     return (
         <div className="skills-tab-container">
-            <Tabs defaultActiveKey="1" size={isMobile ? "default" : "large"} >
+            <Tabs defaultActiveKey="1" size={isMobile ? "default" : "large"} animated={false} >
                 <TabPane
                     tab={
                         <span>

@@ -45,12 +45,15 @@
         max-height: 80px;
     }
 
-    @for $i from 1 through 10 {
-        .skills-image-item:nth-child($i) {
-            animation: fadeIn ease 2s * $i;
-            -webkit-animation: fadeIn ease 2s * $i;
-        }
+    .ant-tabs-tabpane-inactive {
+        opacity: 0;
+        visibility: visible;
     }
+
+    /* .skills-image-item:nth-child(n) {
+        animation: fadeIn ease 2s * n;
+        -webkit-animation: fadeIn ease 2s * n;
+    } */
 
     .ant-tabs-nav-scroll {
         display: flex;
