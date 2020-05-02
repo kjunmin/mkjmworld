@@ -6,12 +6,13 @@
 @import 'about-me.scss';
 @import 'grid.scss';
 @import 'skills-tab.scss';
+@import 'sorting.scss';
 
 :root {
     font-size: 16px;
     font-family: 'Open Sans';
     --text-dark: #020202e0;
-    --text-light: #ffffffe0;
+    --text-light: white;
     --accents: #B9732F;
     --bg-secondary: #437FC7;
     --bg-primary: #6DAFFE;
@@ -22,16 +23,22 @@
     --navbar-secondary: #141418;
     --transition-speed: 600ms;
     --page-content-width-desktop: 60vw;
-    --page-content-width-mobile: 80vw;
-    
+    --page-content-width-mobile: 90vw;
 }
+
+
 
 @media only screen and (max-width: 600px) {
     .root-container {
         padding: 0;
         margin: 0;
     }
-    .page-container {}
+
+    .header-text {
+        width: fit-content;
+        margin: auto;
+        font-size: 1.5em;
+    }
 }
 
 /* Large screens */
@@ -43,5 +50,11 @@
     }
     .page-container {
         margin-left: 5rem;
+    }
+
+    .header-text {
+        width: fit-content;
+        margin: auto;
+        font-size: 2em;
     }
 }

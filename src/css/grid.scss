@@ -1,6 +1,7 @@
 @media only screen and (max-width: 600px) {
     .grid-layout-container {
         display: grid;
+        justify-items: center;
         gap: 1rem;
         width: var(--page-content-width-mobile);
         margin: 5rem auto 5rem auto;
@@ -13,6 +14,7 @@
 @media only screen and (min-width: 600px) {
     .grid-layout-container {
         display: grid;
+        justify-items: center;
         gap: 1rem;
         width: var(--page-content-width-desktop);
         margin: 5rem auto 5rem auto;
