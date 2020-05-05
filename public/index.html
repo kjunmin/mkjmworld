@@ -6,9 +6,31 @@
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCYlGNUPU3f6hDJ_QNRD_Nah_7XGpxl52Q",
+      authDomain: "mkjmworld.firebaseapp.com",
+      databaseURL: "https://mkjmworld.firebaseio.com",
+      projectId: "mkjmworld",
+      storageBucket: "mkjmworld.appspot.com",
+      messagingSenderId: "807860000828",
+      appId: "1:807860000828:web:6a427f5545f93fa062cb39",
+      measurementId: "G-JCFZBHFV7X"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
   <meta name="description" content="MKJMworld" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <!--

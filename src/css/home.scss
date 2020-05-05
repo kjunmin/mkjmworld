@@ -9,12 +9,12 @@
 
 @keyframes animateLogo {
   from {
-    transform: translateX(0) translateY(0);
+    transform: translateX(-100px) translateY(50px);
     opacity: 0;
   }
   to {
-    transform: translateX(18px) translateY(-14px);
-    opacity: 0.5;
+    transform: translateX(0px) translateY(0px);
+    opacity: 0.8;
   }
 }
 
@@ -85,7 +85,7 @@
 
   .jumbotron-splash-container #logo {
     animation-name: animateLogo;
-    animation-duration: 1.2s;
+    animation-duration: 1.6s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
   }
@@ -116,7 +116,7 @@
 
   .jumbotron-splash-container:hover #logo {
     animation-name: animateLogo;
-    animation-duration: 1.2s;
+    animation-duration: 1.6s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
   }
