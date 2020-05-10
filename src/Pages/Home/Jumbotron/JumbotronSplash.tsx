@@ -233,7 +233,7 @@ function JumbotronSplash() {
     >
       <g
         style={{ isolation: "isolate" }}
-        clip-path='url(#e91035cc-5680-4700-ae2a-dac355632297)'
+        clipPath='url(#e91035cc-5680-4700-ae2a-dac355632297)'
       >
         <path
           fill='#155976'
@@ -273,7 +273,7 @@ function JumbotronSplash() {
       </g>
       <g
         style={{ isolation: "isolate" }}
-        clip-path='url(#b2877723-c628-4d09-b8af-edb1ccfcdcb8)'
+        clipPath='url(#b2877723-c628-4d09-b8af-edb1ccfcdcb8)'
       >
         <path
           fill='#b30000'
@@ -328,7 +328,7 @@ function JumbotronSplash() {
       </g>
       <g
         style={{ isolation: "isolate" }}
-        clip-path='url(#b3a7a2a2-ccfb-4519-8ee4-d99d8c6ba387)'
+        clipPath='url(#b3a7a2a2-ccfb-4519-8ee4-d99d8c6ba387)'
       >
         <path
           fill='#a30000'
@@ -366,7 +366,7 @@ function JumbotronSplash() {
       ></path>
       <g
         style={{ isolation: "isolate" }}
-        clip-path='url(#f05e0516-0ef7-41b8-8014-4e4d8228f2b4)'
+        clipPath='url(#f05e0516-0ef7-41b8-8014-4e4d8228f2b4)'
       >
         <path
           fill='#00b300'
@@ -421,7 +421,7 @@ function JumbotronSplash() {
       </g>
       <g
         style={{ isolation: "isolate" }}
-        clip-path='url(#bf9b2193-656f-454e-abca-0e305a95a724)'
+        clipPath='url(#bf9b2193-656f-454e-abca-0e305a95a724)'
       >
         <path
           fill='#00a300'
@@ -450,7 +450,7 @@ function JumbotronSplash() {
       ></path>
       <g
         style={{ isolation: "isolate" }}
-        clip-path='url(#b9156ca5-7e75-499e-8ad5-4d26910ebdde)'
+        clipPath='url(#b9156ca5-7e75-499e-8ad5-4d26910ebdde)'
       >
         <path
           fill='#155976'
@@ -520,7 +520,7 @@ function JumbotronSplash() {
       </g>
       <g
         style={{ isolation: "isolate" }}
-        clip-path='url(#f452a25f-f82e-4d44-85d0-f02a6a8233da)'
+        clipPath='url(#f452a25f-f82e-4d44-85d0-f02a6a8233da)'
       >
         <path
           fill='#1a6d91'
@@ -579,7 +579,7 @@ function JumbotronSplash() {
       ></path>
       <g
         style={{ isolation: "isolate" }}
-        clip-path='url(#e8b2c799-2a61-459d-a7f6-6a6a6da3d1ab)'
+        clipPath='url(#e8b2c799-2a61-459d-a7f6-6a6a6da3d1ab)'
       >
         <path
           fill='#186383'
@@ -617,7 +617,7 @@ function JumbotronSplash() {
       ></path>
       <g
         style={{ isolation: "isolate" }}
-        clip-path='url(#e67b9fe1-d8fc-4d68-b5a8-6398d57cf2dd)'
+        clipPath='url(#e67b9fe1-d8fc-4d68-b5a8-6398d57cf2dd)'
       >
         <path
           fill='#1a6d91'
@@ -678,7 +678,7 @@ function JumbotronSplash() {
     >
       <g
         style={{ isolation: "isolate" }}
-        clip-path='url(#b01a27bf-72df-4e89-853b-31a4a2f983c2)'
+        clipPath='url(#b01a27bf-72df-4e89-853b-31a4a2f983c2)'
       >
         <path
           fill='#856b37'
@@ -746,14 +746,14 @@ function JumbotronSplash() {
           transform='translate(-14.314 -1.725)'
         ></path>
       </g>
-      <g clip-path='url(#a0dc57dd-6ec2-4072-a988-2b11ba2d44e7)'>
+      <g clipPath='url(#a0dc57dd-6ec2-4072-a988-2b11ba2d44e7)'>
         <path
           fill='#856b37'
           d='M294.609 537.231l21.144-12.287a128.092 128.092 0 01-9.888 11.765 6.72 6.72 0 01-1.265.969l-21.144 12.287a6.72 6.72 0 001.265-.968 128.094 128.094 0 009.888-11.766'
           transform='translate(-14.314 -1.725)'
         ></path>
       </g>
-      <g clip-path='url(#b8a5f77f-48fb-4ad9-b36a-6d89e6fd3079)'>
+      <g clipPath='url(#b8a5f77f-48fb-4ad9-b36a-6d89e6fd3079)'>
         <path
           fill='#856b37'
           d='M357.15 572.472l21.143-12.288q-1.269.998-8.046 7.12a65.47 65.47 0 01-9.093 7.308l-21.144 12.287a65.47 65.47 0 009.093-7.308q6.78-6.116 8.046-7.12'
@@ -762,7 +762,7 @@ function JumbotronSplash() {
       </g>
       <g
         style={{ isolation: "isolate" }}
-        clip-path='url(#acb6c5bf-702b-4c0b-8835-b63a526bb7aa)'
+        clipPath='url(#acb6c5bf-702b-4c0b-8835-b63a526bb7aa)'
       >
         <path
           fill='#856b37'
@@ -777,7 +777,7 @@ function JumbotronSplash() {
       </g>
       <g
         style={{ isolation: "isolate" }}
-        clip-path='url(#a2486484-840e-4907-8d0f-e97809de7e93)'
+        clipPath='url(#a2486484-840e-4907-8d0f-e97809de7e93)'
       >
         <path
           fill='#856b37'
@@ -877,7 +877,7 @@ function JumbotronSplash() {
       </g>
       <g
         style={{ isolation: "isolate" }}
-        clip-path='url(#e38d5dcc-8987-4b08-8f01-3e34c360654f)'
+        clipPath='url(#e38d5dcc-8987-4b08-8f01-3e34c360654f)'
       >
         <path
           fill='#a38444'
@@ -915,14 +915,14 @@ function JumbotronSplash() {
           transform='translate(-14.314 -1.725)'
         ></path>
       </g>
-      <g clip-path='url(#b63d4d2e-2486-409a-8a10-464ea5449450)'>
+      <g clipPath='url(#b63d4d2e-2486-409a-8a10-464ea5449450)'>
         <path
           fill='#856b37'
           d='M365.436 470.954l21.144-12.288q-12.479 7.252-29.98 22.99a410.278 410.278 0 00-40.847 43.288l-21.144 12.287a410.278 410.278 0 0140.847-43.288q17.504-15.736 29.98-22.99'
           transform='translate(-14.314 -1.725)'
         ></path>
       </g>
-      <g clip-path='url(#a4e032ec-5332-448a-afea-4a90935a00ee)'>
+      <g clipPath='url(#a4e032ec-5332-448a-afea-4a90935a00ee)'>
         <path
           fill='#856b37'
           d='M410.809 533.519l21.144-12.287q-5.493 3.192-11.707 7.134a361.622 361.622 0 00-41.953 31.818l-21.144 12.288a361.622 361.622 0 0141.953-31.818q6.214-3.942 11.707-7.135'
@@ -931,7 +931,7 @@ function JumbotronSplash() {
       </g>
       <g
         style={{ isolation: "isolate" }}
-        clip-path='url(#ef6e8ccf-4aa4-4609-8125-ba3c5d6555c4)'
+        clipPath='url(#ef6e8ccf-4aa4-4609-8125-ba3c5d6555c4)'
       >
         <path
           fill='#8a6f39'
@@ -966,7 +966,7 @@ function JumbotronSplash() {
       </g>
       <g
         style={{ isolation: "isolate" }}
-        clip-path='url(#fd890adc-32d4-4e97-b528-dc141ba702fc)'
+        clipPath='url(#fd890adc-32d4-4e97-b528-dc141ba702fc)'
       >
         <path
           fill='#a38444'
@@ -1034,7 +1034,7 @@ function JumbotronSplash() {
           transform='translate(-14.314 -1.725)'
         ></path>
       </g>
-      <g clip-path='url(#ea1b9642-f3a7-456d-8e3f-d1c4061e089c)'>
+      <g clipPath='url(#ea1b9642-f3a7-456d-8e3f-d1c4061e089c)'>
         <path
           fill='#8a6f39'
           d='M452.35 622.954l21.145-12.288a87.306 87.306 0 0010.422-1.705q5.116-1.158 7.96-1.908c1.902-.49 3.31-.808 4.237-.942L474.97 618.4c-.927.133-2.335.452-4.236.942q-2.841.751-7.96 1.907a87.305 87.305 0 01-10.423 1.706'
@@ -1047,7 +1047,7 @@ function JumbotronSplash() {
       ></path>
       <g
         style={{ isolation: "isolate" }}
-        clip-path='url(#b0ee956b-921c-47db-bf23-ffa09b6bcd58)'
+        clipPath='url(#b0ee956b-921c-47db-bf23-ffa09b6bcd58)'
       >
         <path
           fill='#856b37'
@@ -1147,7 +1147,7 @@ function JumbotronSplash() {
       </g>
       <g
         style={{ isolation: "isolate" }}
-        clip-path='url(#fe83dd2c-f8f0-492d-bfae-57a724afe9bf)'
+        clipPath='url(#fe83dd2c-f8f0-492d-bfae-57a724afe9bf)'
       >
         <path
           fill='#856b37'
@@ -1347,7 +1347,7 @@ function JumbotronSplash() {
       ></path>
       <g
         style={{ isolation: "isolate" }}
-        clip-path='url(#a3c2ad1e-1182-4b9b-a995-89108c530cee)'
+        clipPath='url(#a3c2ad1e-1182-4b9b-a995-89108c530cee)'
       >
         <path
           fill='#856b37'
@@ -1407,7 +1407,7 @@ function JumbotronSplash() {
       ></path>
       <g
         style={{ isolation: "isolate" }}
-        clip-path='url(#a6f3335f-63f9-4a80-929b-3fa2ed062505)'
+        clipPath='url(#a6f3335f-63f9-4a80-929b-3fa2ed062505)'
       >
         <path
           fill='#b3904a'

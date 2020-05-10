@@ -8,7 +8,7 @@ const ArrayParamSliders = props => {
         <div>
             <Row>
                 <Col span={4}>
-                    <p>Array Size:</p>
+                    <h2>Array Size:</h2>
                 </Col>
                 <Col span={16}>
                     <Slider
@@ -32,7 +32,7 @@ const ArrayParamSliders = props => {
             </Row>
             <Row>
                 <Col span={4}>
-                    <p>Step Delay:</p>
+                   <h2>Step Delay:</h2>
                 </Col>
                 <Col span={16}>
                     <Slider

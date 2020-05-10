@@ -125,7 +125,6 @@ function Sorting() {
                     setStepDelay={setStepDelay}
                     maxArraySize={maxArraySize}
                     maxStepDelay={maxStepDelay} />
-                <br />
                 <div className="sorting-button-row">
                     <Button
                         name={MERGESORT_SELECTION}
