@@ -37,6 +37,7 @@
   .jumbotron {
     display: block;
     background-color: var(--bg-secondary);
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
     width: 100%;
     height: 50vh;
   }
@@ -96,6 +97,7 @@
   .jumbotron {
     display: block;
     background-color: var(--bg-secondary);
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
     z-index: -1;
     width: 100%;
     height: 60vh;

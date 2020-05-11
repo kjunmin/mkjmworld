@@ -1,4 +1,4 @@
-import React, { createRef } from 'react';
+import React, { createRef, useState } from 'react';
 import './css/styles.scss';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './LayoutComponents/Navbar';
@@ -11,12 +11,23 @@ function App() {
 
   const ref: any = createRef();
 
+  let currentTheme : any = localStorage.getItem('theme') !== null ? localStorage.getItem('theme') : 'light-theme';
+  const [currTheme, setCurrTheme] = useState(currentTheme);
+
+  function switchTheme() {
+    const nextTheme = (currTheme === 'light-theme') ? 'dark-theme' : 'light-theme';
+    ref.current.classList.remove(currTheme);
+    ref.current.classList.add(nextTheme);
+    setCurrTheme(nextTheme);
+    localStorage.setItem('theme', nextTheme);
+  }
+
   return (
     <Router>
       <ScrollToTop>
         <div className="root-container" >
-          <div className="light-theme" ref={ref}>
-            <Navbar themeRef={ref} />
+          <div className={currTheme} ref={ref}>
+            <Navbar changeTheme={switchTheme} currentTheme={currTheme} />
             <div className="page-container">
               <AppRouter />
               <FooterComponent />

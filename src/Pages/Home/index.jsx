@@ -2,7 +2,7 @@ import React from 'react';
 import '../../css/styles.scss';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
-import Skills from './Skills';
+import Skills, { SkillsGrid } from './Skills';
 
 import Jumbotron from './Jumbotron';
 
@@ -13,7 +13,7 @@ function Home() {
             <AboutMe />
             <Skills />
             <Projects />
-        </div>
+        </div >
     )
 }
 

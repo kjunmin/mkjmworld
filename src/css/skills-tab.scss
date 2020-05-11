@@ -64,6 +64,14 @@
   }
 }
 
+.ant-tabs-tab {
+  color: var(--text-primary);
+}
+
+.ant-tabs-tab:hover {
+  color: var(--text-secondary);
+}
+
 .ant-tabs-tabpane-inactive .skills-image-item {
   opacity: 0;
   visibility: hidden;

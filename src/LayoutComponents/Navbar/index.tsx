@@ -1,18 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../../css/styles.scss';
 import DarkLightModeSwitcher from './darklightmode';
 
 function Navbar(props) {
 
-    const { themeRef } = props;
-    const [currTheme, setCurrTheme] = useState('light-theme');
-
-    function switchTheme() {
-        const nextTheme = (currTheme === 'light-theme') ? 'dark-theme' : 'light-theme';
-        themeRef.current.classList.remove(currTheme);
-        themeRef.current.classList.add(nextTheme);
-        setCurrTheme(nextTheme);
-    }
+    const { changeTheme, currentTheme } = props;
 
     return (
         <nav className="navbar">
@@ -54,9 +46,9 @@ function Navbar(props) {
                 </li>
 
                 <li className="nav-item">
-                    <a className="nav-link" onClick={switchTheme}>
-                        <DarkLightModeSwitcher currTheme={currTheme} />
-                        {currTheme === 'light-theme' ? <span className="link-text">Light</span> : <span className="link-text">Dark</span>}
+                    <a className="nav-link" onClick={changeTheme}>
+                        <DarkLightModeSwitcher currTheme={currentTheme} />
+                        {currentTheme === 'light-theme' ? <span className="link-text">Light</span> : <span className="link-text">Dark</span>}
                     </a>
                 </li>
 
