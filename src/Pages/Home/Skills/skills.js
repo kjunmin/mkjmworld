@@ -5,10 +5,11 @@ import CssLogo from '../../../resources/img/logo/css.png';
 import JsLogo from '../../../resources/img/logo/js.png';
 import NodeJSLogo from '../../../resources/img/logo/node.png';
 import MongoLogo from '../../../resources/img/logo/mongoDB.png';
-import JavaLogo from '../../../resources/img/logo/Java.png';
+import JavaLogo from '../../../resources/img/logo/java.png';
 import PostGresLogo from '../../../resources/img/logo/postgres.png';
 import PythonLogo from '../../../resources/img/logo/python.png';
 import CppLogo from '../../../resources/img/logo/c++.png';
+import CSharpLogo from '../../../resources/img/logo/csharp.png';
 import RedisLogo from '../../../resources/img/logo/redis.png';
 import PhotoshopLogo from '../../../resources/img/logo/photoshop.jpeg';
 import IllustratorLogo from '../../../resources/img/logo/illustrator.png';
@@ -61,6 +62,10 @@ export const techSkills = [
     {
         name: 'C++',
         logo: CppLogo
+    },
+    {
+        name: 'CSharp',
+        logo: CSharpLogo
     },
     {
         name: 'Redis',

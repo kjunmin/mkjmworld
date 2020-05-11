@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../css/styles.scss';
+import DarkLightModeSwitcher from './darklightmode';
 
-function Navbar() {
+function Navbar(props) {
+
+    const { themeRef } = props;
+    const [currTheme, setCurrTheme] = useState('light-theme');
+
+    function switchTheme() {
+        const nextTheme = (currTheme === 'light-theme') ? 'dark-theme' : 'light-theme';
+        themeRef.current.classList.remove(currTheme);
+        themeRef.current.classList.add(nextTheme);
+        setCurrTheme(nextTheme);
+    }
+
     return (
         <nav className="navbar">
             <ul className="navbar-nav">
@@ -42,29 +54,9 @@ function Navbar() {
                 </li>
 
                 <li className="nav-item">
-                    <a href="/" className="nav-link">
-                        <svg aria-hidden="true" focusable="false"
-                            data-prefix="fad"
-                            data-icon="alien-monster"
-                            role="img"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 576 512"
-                            className="svg-inline--fa fa-alien-monster fa-w-18 fa-9x"
-                        >
-                            <g className="fa-group">
-                                <path
-                                    fill="currentColor"
-                                    d="M560,128H528a15.99954,15.99954,0,0,0-16,16v80H480V176a15.99954,15.99954,0,0,0-16-16H416V96h48a16.00079,16.00079,0,0,0,16-16V48a15.99954,15.99954,0,0,0-16-16H432a15.99954,15.99954,0,0,0-16,16V64H368a15.99954,15.99954,0,0,0-16,16v48H224V80a15.99954,15.99954,0,0,0-16-16H160V48a15.99954,15.99954,0,0,0-16-16H112A15.99954,15.99954,0,0,0,96,48V80a16.00079,16.00079,0,0,0,16,16h48v64H112a15.99954,15.99954,0,0,0-16,16v48H64V144a15.99954,15.99954,0,0,0-16-16H16A15.99954,15.99954,0,0,0,0,144V272a16.00079,16.00079,0,0,0,16,16H64v80a16.00079,16.00079,0,0,0,16,16h48v80a16.00079,16.00079,0,0,0,16,16h96a16.00079,16.00079,0,0,0,16-16V432a15.99954,15.99954,0,0,0-16-16H192V384H384v32H336a15.99954,15.99954,0,0,0-16,16v32a16.00079,16.00079,0,0,0,16,16h96a16.00079,16.00079,0,0,0,16-16V384h48a16.00079,16.00079,0,0,0,16-16V288h48a16.00079,16.00079,0,0,0,16-16V144A15.99954,15.99954,0,0,0,560,128ZM224,320H160V224h64Zm192,0H352V224h64Z"
-                                    className="fa-secondary"
-                                ></path>
-                                <path
-                                    fill="currentColor"
-                                    d="M160,320h64V224H160Zm192-96v96h64V224Z"
-                                    className="fa-primary"
-                                ></path>
-                            </g>
-                        </svg>
-                        <span className="link-text">Aliens</span>
+                    <a className="nav-link" onClick={switchTheme}>
+                        <DarkLightModeSwitcher currTheme={currTheme} />
+                        {currTheme === 'light-theme' ? <span className="link-text">Light</span> : <span className="link-text">Dark</span>}
                     </a>
                 </li>
 
@@ -79,83 +71,6 @@ function Navbar() {
                     <a href="https://github.com/mephet" target="_blank" className="nav-link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="128px" height="128px"><radialGradient id="uCZz3JcUOJjrtrvOyVUpaa" cx="33.34" cy="36.064" r="43.888" gradientTransform="translate(0 2)" gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="#f4e9c3" /><stop offset=".219" stopColor="#f8eecd" /><stop offset=".644" stopColor="#fdf4dc" /><stop offset="1" stopColor="#fff6e1" /></radialGradient><path fill="url(#uCZz3JcUOJjrtrvOyVUpaa)" d="M51.03,37.34c0.16,0.98,1.08,1.66,2.08,1.66h5.39c2.63,0,4.75,2.28,4.48,4.96	C62.74,46.3,60.64,48,58.29,48H49c-1.22,0-2.18,1.08-1.97,2.34c0.16,0.98,1.08,1.66,2.08,1.66h8.39c1.24,0,2.37,0.5,3.18,1.32	C61.5,54.13,62,55.26,62,56.5c0,2.49-2.01,4.5-4.5,4.5h-49c-1.52,0-2.9-0.62-3.89-1.61C3.62,58.4,3,57.02,3,55.5	C3,52.46,5.46,50,8.5,50H14c1.22,0,2.18-1.08,1.97-2.34C15.81,46.68,14.89,44,13.89,44H5.5c-2.63,0-4.75-2.28-4.48-4.96	C1.26,36.7,3.36,35,5.71,35H8c1.71,0,3.09-1.43,3-3.16C10.91,30.22,9.45,29,7.83,29H4.5c-2.63,0-4.75-2.28-4.48-4.96	C0.26,21.7,2.37,20,4.71,20H20c0.83,0,1.58-0.34,2.12-0.88C22.66,18.58,23,17.83,23,17c0-1.66-1.34-3-3-3h-1.18	c-0.62-0.09-1.43,0-2.32,0h-9c-1.52,0-2.9-0.62-3.89-1.61S2,10.02,2,8.5C2,5.46,4.46,3,7.5,3h49c3.21,0,5.8,2.79,5.47,6.06	C61.68,11.92,60.11,14,57.24,14H52c-2.76,0-5,2.24-5,5c0,1.38,0.56,2.63,1.46,3.54C49.37,23.44,50.62,24,52,24h6.5	c3.21,0,5.8,2.79,5.47,6.06C63.68,32.92,61.11,35,58.24,35H53C51.78,35,50.82,36.08,51.03,37.34z" /><linearGradient id="uCZz3JcUOJjrtrvOyVUpab" x1="32" x2="32" y1="5.723" y2="55.93" gradientUnits="userSpaceOnUse"><stop offset="0" stopColor="#a4a4a4" /><stop offset=".619" stopColor="gray" /><stop offset="1" stopColor="#6f6f6f" /></linearGradient><path fill="url(#uCZz3JcUOJjrtrvOyVUpab)" d="M58,32c0,13.35-10.05,24.34-23,25.83C34.02,57.94,33.01,58,32,58c-1.71,0-3.38-0.17-5-0.49	C15.03,55.19,6,44.65,6,32C6,17.64,17.64,6,32,6S58,17.64,58,32z" /><path fill="#fff" d="M22.973,57.169c-0.006-0.002-0.013-0.004-0.019-0.006C22.961,57.165,22.967,57.167,22.973,57.169z" /><path fill="#fff" d="M40,56.727v-6.266c0-2.733-1.831-6.361-4.341-7.652c9.12-0.931,13.472-5.408,13.472-11.485 c0-2.614-1.125-5.14-3.035-7.269c0.638-2.114,1.44-6.451-0.233-8.098c-4.119,0-6.606,2.636-7.195,3.341 c-2.053-0.696-4.311-1.088-6.679-1.088c-2.363,0-4.613,0.392-6.661,1.084c-0.597-0.71-3.081-3.337-7.191-3.337 c-1.666,1.645-0.873,5.964-0.242,8.082c-1.922,2.134-3.054,4.667-3.054,7.285c0,6.081,4.359,10.561,13.493,11.487 c-1.584,0.816-2.88,2.544-3.63,4.421c-1.394,0.216-2.875,0.273-3.865,0.273c-2.041,0-2.555-0.32-3.648-1.733 c-1.097-1.41-2.263-2.361-3.669-2.753c-0.761-0.079-1.264,0.505-0.604,1.016c2.226,1.537,2.382,4.049,3.28,5.692 C17.008,51.205,18.677,52,20.553,52c0.469,0,2.334,0,3.447,0v4.737c0,0.25,3.998,1.319,7.998,1.319 C36.551,58.056,40,56.833,40,56.727z" /></svg>
                         <span className="link-text">Github</span>
-                    </a>
-                </li>
-
-                <li className="nav-item" id="themeButton">
-                    <a href="/" className="nav-link">
-                        <svg
-                            id="lightIcon"
-                            aria-hidden="true"
-                            focusable="false"
-                            data-prefix="fad"
-                            data-icon="moon-stars"
-                            role="img"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                            className="svg-inline--fa fa-moon-stars fa-w-16 fa-7x"
-                        >
-                            <g className="fa-group">
-                                <path
-                                    fill="currentColor"
-                                    d="M320 32L304 0l-16 32-32 16 32 16 16 32 16-32 32-16zm138.7 149.3L432 128l-26.7 53.3L352 208l53.3 26.7L432 288l26.7-53.3L512 208z"
-                                    className="fa-secondary"
-                                ></path>
-                                <path
-                                    fill="currentColor"
-                                    d="M332.2 426.4c8.1-1.6 13.9 8 8.6 14.5a191.18 191.18 0 0 1-149 71.1C85.8 512 0 426 0 320c0-120 108.7-210.6 227-188.8 8.2 1.6 10.1 12.6 2.8 16.7a150.3 150.3 0 0 0-76.1 130.8c0 94 85.4 165.4 178.5 147.7z"
-                                    className="fa-primary"
-                                ></path>
-                            </g>
-                        </svg>
-                        <svg
-                            id="solarIcon"
-                            aria-hidden="true"
-                            focusable="false"
-                            data-prefix="fad"
-                            data-icon="sun"
-                            role="img"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                            className="svg-inline--fa fa-sun fa-w-16 fa-7x"
-                        >
-                            <g className="fa-group">
-                                <path
-                                    fill="currentColor"
-                                    d="M502.42 240.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.41-94.8a17.31 17.31 0 0 0-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4a17.31 17.31 0 0 0 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.41-33.5 47.3 94.7a17.31 17.31 0 0 0 31 0l47.31-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3a17.33 17.33 0 0 0 .2-31.1zm-155.9 106c-49.91 49.9-131.11 49.9-181 0a128.13 128.13 0 0 1 0-181c49.9-49.9 131.1-49.9 181 0a128.13 128.13 0 0 1 0 181z"
-                                    className="fa-secondary"
-                                ></path>
-                                <path
-                                    fill="currentColor"
-                                    d="M352 256a96 96 0 1 1-96-96 96.15 96.15 0 0 1 96 96z"
-                                    className="fa-primary"
-                                ></path>
-                            </g>
-                        </svg>
-                        <svg
-                            id="darkIcon"
-                            aria-hidden="true"
-                            focusable="false"
-                            data-prefix="fad"
-                            data-icon="sunglasses"
-                            role="img"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 576 512"
-                            className="svg-inline--fa fa-sunglasses fa-w-18 fa-7x"
-                        >
-                            <g className="fa-group">
-                                <path
-                                    fill="currentColor"
-                                    d="M574.09 280.38L528.75 98.66a87.94 87.94 0 0 0-113.19-62.14l-15.25 5.08a16 16 0 0 0-10.12 20.25L395.25 77a16 16 0 0 0 20.22 10.13l13.19-4.39c10.87-3.63 23-3.57 33.15 1.73a39.59 39.59 0 0 1 20.38 25.81l38.47 153.83a276.7 276.7 0 0 0-81.22-12.47c-34.75 0-74 7-114.85 26.75h-73.18c-40.85-19.75-80.07-26.75-114.85-26.75a276.75 276.75 0 0 0-81.22 12.45l38.47-153.8a39.61 39.61 0 0 1 20.38-25.82c10.15-5.29 22.28-5.34 33.15-1.73l13.16 4.39A16 16 0 0 0 180.75 77l5.06-15.19a16 16 0 0 0-10.12-20.21l-15.25-5.08A87.95 87.95 0 0 0 47.25 98.65L1.91 280.38A75.35 75.35 0 0 0 0 295.86v70.25C0 429 51.59 480 115.19 480h37.12c60.28 0 110.38-45.94 114.88-105.37l2.93-38.63h35.76l2.93 38.63c4.5 59.43 54.6 105.37 114.88 105.37h37.12C524.41 480 576 429 576 366.13v-70.25a62.67 62.67 0 0 0-1.91-15.5zM203.38 369.8c-2 25.9-24.41 46.2-51.07 46.2h-37.12C87 416 64 393.63 64 366.11v-37.55a217.35 217.35 0 0 1 72.59-12.9 196.51 196.51 0 0 1 69.91 12.9zM512 366.13c0 27.5-23 49.87-51.19 49.87h-37.12c-26.69 0-49.1-20.3-51.07-46.2l-3.12-41.24a196.55 196.55 0 0 1 69.94-12.9A217.41 217.41 0 0 1 512 328.58z"
-                                    className="fa-secondary"
-                                ></path>
-                                <path
-                                    fill="currentColor"
-                                    d="M64.19 367.9c0-.61-.19-1.18-.19-1.8 0 27.53 23 49.9 51.19 49.9h37.12c26.66 0 49.1-20.3 51.07-46.2l3.12-41.24c-14-5.29-28.31-8.38-42.78-10.42zm404-50l-95.83 47.91.3 4c2 25.9 24.38 46.2 51.07 46.2h37.12C489 416 512 393.63 512 366.13v-37.55a227.76 227.76 0 0 0-43.85-10.66z"
-                                    className="fa-primary"
-                                ></path>
-                            </g>
-                        </svg>
                     </a>
                 </li>
             </ul>
