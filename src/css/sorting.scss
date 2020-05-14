@@ -12,6 +12,7 @@
   .sorting-button-row {
     display: flex;
     flex-direction: row;
+    margin-top: 3vh;
     justify-content: space-evenly;
   }
 
@@ -24,8 +25,14 @@
     margin: 0 auto 0 auto;
     padding-top: 0.2vh;
     padding-bottom: 2vh;
-    min-height: 350px;
+    min-height: 170px;
   }
+
+
+  .slider-container {
+    width: 80%;
+  }
+
 }
 
 /* Large screens */
@@ -41,9 +48,14 @@
     padding-bottom: 2vh;
   }
 
+  .slider-container {
+    width: var(--page-content-width-desktop);
+  }
+
   .sorting-button-row {
     display: flex;
     flex-direction: row;
+    margin-top: 3vh;
     justify-content: space-evenly;
   }
 
@@ -54,6 +66,12 @@
     align-items: flex-end;
     width: var(--page-content-width-desktop);
     margin: auto auto auto auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     min-height: 350px;
+  }
+
+  .ant-btn {
+    color: var(--text-primary);
   }
 }

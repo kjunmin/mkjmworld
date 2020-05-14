@@ -1,10 +1,9 @@
 import React from 'react';
 import '../../../css/styles.scss';
 import { techSkills, designSkills, utilitySkills } from './skills';
-import { isMobile } from 'react-device-detect';
 import Tabs from '../../../LayoutComponents/Tabs';
 
-export function SkillsGrid(props) {
+function SkillsGrid(props) {
     return (
         <section className="skills-tab-container">
             {props.skills.map((skill, idx) => <img key={idx} className="skills-image-item" src={skill.logo} alt={skill.name} />)}
@@ -14,9 +13,9 @@ export function SkillsGrid(props) {
 
 function Skills() {
 
-    const designIcon = <i class="fa fa-paint-brush"></i>
-    const techIcon = <i class="fa fa-code"></i>;
-    const toolIcon = <i class="fa fa-wrench"></i>
+    const designIcon = <i className="fa fa-paint-brush"></i>
+    const techIcon = <i className="fa fa-code"></i>;
+    const toolIcon = <i className="fa fa-wrench"></i>
 
     return (
         <div className="skills-tab-container">

@@ -2,10 +2,9 @@
 @import 'home.scss';
 @import 'footer.scss';
 @import 'navbar.scss';
-@import 'tab-bar.scss';
 @import 'about-me.scss';
 @import 'grid.scss';
-// @import 'skills-tab.scss';
+@import 'skills-tab.scss';
 @import 'sorting.scss';
 
 :root {
@@ -85,6 +84,12 @@
         color: var(--text-primary);
     }
 
+    .slider-label {
+        font-size: 0.8em;
+        color: var(--text-primary);
+        transition: color 1000ms ease-in-out;
+    }
+
     .paragraph-text {
         width: fit-content;
         margin: auto;
@@ -110,6 +115,12 @@
         width: fit-content;
         margin: auto;
         font-size: 2em;
+        color: var(--text-primary);
+        transition: color 1000ms ease-in-out;
+    }
+
+    .slider-label {
+        font-size: 1em;
         color: var(--text-primary);
         transition: color 1000ms ease-in-out;
     }

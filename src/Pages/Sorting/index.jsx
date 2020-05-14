@@ -129,7 +129,7 @@ function Sorting() {
                     <Button
                         name={MERGESORT_SELECTION}
                         type={sortingMethod === MERGESORT_SELECTION ? 'primary' : 'ghost'}
-                        size="large"
+                        size={isMobile ? "small" : "large"}
                         disabled={isUiDisabled}
                         onClick={(e) => selectSortingMethod(e.target.name)}
                     >
@@ -138,7 +138,7 @@ function Sorting() {
                     <Button
                         name={QUICKSORT_SELECTION}
                         type={sortingMethod === QUICKSORT_SELECTION ? 'primary' : 'ghost'}
-                        size="large"
+                        size={isMobile ? "small" : "large"}
                         disabled={isUiDisabled}
                         onClick={(e) => selectSortingMethod(e.target.name)}
                     >
@@ -147,7 +147,7 @@ function Sorting() {
                     <Button
                         name={HEAPSORT_SELECTION}
                         type={sortingMethod === HEAPSORT_SELECTION ? 'primary' : 'ghost'}
-                        size="large"
+                        size={isMobile ? "small" : "large"}
                         disabled={isUiDisabled}
                         onClick={(e) => selectSortingMethod(e.target.name)}
                     >
@@ -159,7 +159,7 @@ function Sorting() {
                 <div className="sorting-button-row">
                     <Button
                         type="primary"
-                        size="large"
+                        size={isMobile ? "small" : "large"}
                         ghost
                         disabled={isUiDisabled}
                         onClick={() => generateNewArray(arraySize)}
@@ -169,7 +169,7 @@ function Sorting() {
                     <Button
                         name="sort"
                         type="primary"
-                        size="large"
+                        size={isMobile ? "small" : "large"}
                         ghost
                         disabled={isSortButtonDisabled || isUiDisabled}
                         onClick={() => startSort()}
@@ -179,7 +179,7 @@ function Sorting() {
                     <Button
                         type="primary"
                         ghost
-                        size="large"
+                        size={isMobile ? "small" : "large"}
                         disabled={isVisualButtonDisabled || isUiDisabled}
                         onClick={() => {
                             beginVisualisation(stepDelay);

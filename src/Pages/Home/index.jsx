@@ -2,7 +2,7 @@ import React from 'react';
 import '../../css/styles.scss';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
-import Skills, { SkillsGrid } from './Skills';
+import Skills from './Skills';
 
 import Jumbotron from './Jumbotron';
 

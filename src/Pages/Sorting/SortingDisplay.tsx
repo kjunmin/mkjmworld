@@ -5,7 +5,7 @@ function Bar(props) {
     const { length, bgc } = props;
 
     const styles: any = {
-        height: length,
+        height: isMobile ? length / 2 : length,
         margin: isMobile ? '0.08rem' : '0.15rem',
         width: '100%',
         backgroundColor: bgc

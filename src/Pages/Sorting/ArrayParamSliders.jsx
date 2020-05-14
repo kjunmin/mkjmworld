@@ -5,10 +5,10 @@ const ArrayParamSliders = props => {
     const { arraySize, generateNewArray, stepDelay, setStepDelay, isDisabled, maxArraySize, maxStepDelay } = props;
 
     return (
-        <div>
+        <div className="slider-container">
             <Row>
                 <Col span={4}>
-                    <h2>Array Size:</h2>
+                    <h2 className="slider-label">Array Size:</h2>
                 </Col>
                 <Col span={16}>
                     <Slider
@@ -32,7 +32,7 @@ const ArrayParamSliders = props => {
             </Row>
             <Row>
                 <Col span={4}>
-                   <h2>Step Delay:</h2>
+                   <h2 className="slider-label">Step Delay:</h2>
                 </Col>
                 <Col span={16}>
                     <Slider

@@ -37,6 +37,7 @@ class Tab extends Component {
             >
                 {icon}
                 <b>{label}</b>
+                <span></span>
             </button>
         );
     }
@@ -86,7 +87,7 @@ class Tabs extends Component {
                             />
                         );
                     })}
-                    <span></span>
+                    
                 </nav>
                 <div className="tab-content">
                     {children.map((child) => {
