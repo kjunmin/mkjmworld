@@ -5,7 +5,7 @@ import CssLogo from '../../../resources/img/logo/css.png';
 import JsLogo from '../../../resources/img/logo/js.png';
 import NodeJSLogo from '../../../resources/img/logo/node.png';
 import MongoLogo from '../../../resources/img/logo/mongoDB.png';
-import JavaLogo from '../../../resources/img/logo/java.png';
+import JavaLogo from '../../../resources/img/logo/Java.png';
 import PostGresLogo from '../../../resources/img/logo/postgres.png';
 import PythonLogo from '../../../resources/img/logo/python.png';
 import CppLogo from '../../../resources/img/logo/c++.png';
