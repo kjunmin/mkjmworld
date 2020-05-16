@@ -1,28 +1,30 @@
 import React from 'react';
-import { Card } from 'antd';
-import { Link } from 'react-router-dom';
 import { projectList } from './projects';
 
-const { Meta } = Card;
-
 function ProjectGrid(props) {
+
+    const { projects } = props;
+
     return (
-        <section className="grid-layout-container">
-            {props.projects.map((project, idx) =>
-                <Link key={idx} to={process.env.PUBLIC_URL + project.link} >
-                    <Card
-                        key={idx}
-                        hoverable
-                        style={{ width: 240 }}
-                        cover={<img alt={project.alt} src={project.image} />}
-                    >
-                        <Meta title={project.title} description={project.description} />
-                    </Card>
-                </Link>
-            )}
-        </section>
+        <div className="test">
+            {projects.map((project, idx) => <ProjectCard key={idx} title={project.title} description={project.description} />)}
+        </div>
     )
 }
+
+function ProjectCard(props) {
+    const { title, description } = props;
+
+    return (
+        <a className="project-card-item" href='/'>
+            <section className="project-card-info">
+                <h2 className="project-card-title">{title}</h2>
+                <p className="project-card-body">{description}</p>
+            </section>
+        </a>
+    )
+}
+
 
 function Projects() {
     return (

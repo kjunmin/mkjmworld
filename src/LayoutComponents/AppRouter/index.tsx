@@ -9,7 +9,7 @@ function AppRouter() {
         <div>
             <Route path={ process.env.PUBLIC_URL + '/'} exact component={Home} />
             <Route path={ process.env.PUBLIC_URL + '/sorting'} component={Sorting} />
-            <Route pathe={ process.env.PUBLIC_URL + '/canvas'} component={CanvasPage} />
+            <Route path={ process.env.PUBLIC_URL + '/canvas'} component={CanvasPage} />
         </div>
     )
 }
