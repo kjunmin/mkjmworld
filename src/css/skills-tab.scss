@@ -101,11 +101,11 @@
 
     .tab-list-active span {
       position: absolute;
-      width: 6em;
+      width: 24vw;
       height: 2em;
       background-color: var(--highlight-primary);
       top: 0.4vh;
-      left: 0.9vw;
+      left: 2vw;
       border-radius: 5em;
       z-index: -1;
       transition: 0.3s ease-in-out;
@@ -134,11 +134,11 @@
 
   .skills-image-item {
     opacity: 0;
-    margin-left: 1.6rem;
-    margin-right: 2.2rem;
-    margin-bottom: 1rem;
+    margin-left: 1.6em;
+    margin-right: 2.5em;
+    margin-bottom: 1.1em;
     max-width: auto;
-    max-height: 90px;
+    max-height: 100px;
   }
   @for $i from 1 through 20 {
     .skills-image-item:nth-child(#{$i}) {
@@ -243,7 +243,7 @@
 
     nav button:nth-child(1):hover span {
       position: absolute;
-      width: 9em;
+      width: 8.5em;
       height: 2.5em;
       background-color: var(--highlight-primary);
       top: 0px;
@@ -255,7 +255,7 @@
 
     nav button:nth-child(2):hover span {
       position: absolute;
-      width: 9em;
+      width: 8.5em;
       height: 2.5em;
       background-color: var(--highlight-primary);
       top: 0px;
@@ -267,7 +267,7 @@
 
     nav button:nth-child(3):hover span {
       position: absolute;
-      width: 9em;
+      width: 8.5em;
       height: 2.5em;
       background-color: var(--highlight-primary);
       top: 0px;

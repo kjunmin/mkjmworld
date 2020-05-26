@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
 
   .test {
     display: flex;
@@ -15,8 +15,6 @@
     height: 280px;
     width: 100%;
     align-items: flex-end;
-    background-image: url("https://image.shutterstock.com/z/stock-photo-aerial-view-of-singapore-city-at-day-1664397226.jpg");
-    // background-image: url('https://mdn.mozillademos.org/files/7693/catfront.png');
   }
 
   .project-card-info {
@@ -38,7 +36,7 @@
 
 /* Large screens */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
 
   .test {
     display: flex;
@@ -53,10 +51,9 @@
   .project-card-item {
     display: flex;
     height: 280px;
-    min-width: 600px;
+    max-width: 600px;
+    width: 50%;
     align-items: flex-end;
-    background-image: url("https://image.shutterstock.com/z/stock-photo-aerial-view-of-singapore-city-at-day-1664397226.jpg");
-    // background-image: url('https://mdn.mozillademos.org/files/7693/catfront.png');
   }
 
   .project-card-info {

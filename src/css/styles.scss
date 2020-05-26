@@ -10,8 +10,8 @@
 :root {
     font-size: 16px;
     font-family: 'Open Sans';
-    --text-primary: #020202e0;
-    --text-secondary: white;
+    --text-dark: #020202e0;
+    --text-light: white;
     --accents: #B9732F;
     --bg-secondary: #437FC7;
     --bg-primary: #6DAFFE;
@@ -111,9 +111,17 @@
         transition: background 500ms ease-in-out, color 1000ms ease-in-out;
     }
 
+    .page-layout-container {
+        width: var(--page-content-width-desktop);
+        margin: 0 auto 0 auto;
+        color: var(--text-primary);
+        transition: color 1000ms ease-in-out;
+    }
+
     .header-text {
         width: fit-content;
-        margin: auto;
+        // margin: auto;
+        margin: 15vh auto 4vh auto;
         font-size: 2em;
         color: var(--text-primary);
         transition: color 1000ms ease-in-out;
@@ -131,4 +139,5 @@
         color: var(--text-primary);
         transition: color 1000ms ease-in-out;
     }
+
 }
