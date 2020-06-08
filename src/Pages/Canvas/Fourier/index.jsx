@@ -80,9 +80,7 @@ function Fourier() {
                     step={STEP_SERIES_NUM} />
             </div>
             <br />
-            <div style={styles.canvasContainerStyle}>
-                <Sketch windowResized={handleResize} setup={fourierSketch.setup} draw={fourierSketch.draw} />
-            </div>
+            <Sketch className="p5-canvas" windowResized={handleResize} setup={fourierSketch.setup} draw={fourierSketch.draw} />
         </div>
     )
 

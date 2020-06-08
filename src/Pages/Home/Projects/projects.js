@@ -1,5 +1,3 @@
-import SortingCardImg from '../../../resources/img/project_cards/sorting-card.png';
-
 export const projectList = [
     {
         title: "F&N Game Design",

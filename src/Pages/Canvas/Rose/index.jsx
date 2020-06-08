@@ -4,6 +4,7 @@ import RoseFunction from './sketch';
 import { Slider } from 'antd';
 // import RoseDescription from './RoseDescription';
 import { isMobile } from 'react-device-detect';
+import RoseDescription from './RoseDescription';
 
 const Rose = () => {
     const INITIAL_N = 5;
@@ -74,7 +75,7 @@ const Rose = () => {
 
     return (
         <div style={styles.containerStyle}>
-            {/* <RoseDescription /> */}
+            <RoseDescription />
             <div style={styles.sliderStyle}>
                 <h2>N value</h2>
                 <Slider
