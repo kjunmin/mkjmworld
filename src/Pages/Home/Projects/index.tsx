@@ -6,7 +6,7 @@ function ProjectGrid(props) {
     const { projects } = props;
 
     return (
-        <div className="test">
+        <div className="project-grid-container">
             {projects.map((project, idx) => <ProjectCard key={idx} image={project.image} title={project.title} description={project.description} link={project.link} />)}
         </div>
     )

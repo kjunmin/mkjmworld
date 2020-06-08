@@ -38,9 +38,9 @@
 
 @media only screen and (min-width: 1000px) {
 
-  .test {
+  .project-grid-container {
     display: flex;
-    flex: auto;
+    flex-basis: auto;
     flex-wrap: wrap;
     margin: 0 auto 0 auto;
     align-items: center;
