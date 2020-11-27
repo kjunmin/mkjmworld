@@ -37,22 +37,4 @@ export const projectList = [
         alt: "instagram",
         description: "www.instagram.com"
     },
-    {
-        title: "Europe Street beat",
-        image: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-        alt: "instagram",
-        description: "www.instagram.com"
-    },
-    {
-        title: "Europe Street beat",
-        image: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-        alt: "instagram",
-        description: "www.instagram.com"
-    },
-    {
-        title: "Europe Street beat",
-        image: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-        alt: "instagram",
-        description: "www.instagram.com"
-    },
 ]

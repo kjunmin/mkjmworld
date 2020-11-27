@@ -3,9 +3,10 @@
 @import 'footer.scss';
 @import 'navbar.scss';
 @import 'about-me.scss';
-@import 'grid.scss';
+@import 'card.scss';
 @import 'skills-tab.scss';
 @import 'sorting.scss';
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
 
 :root {
     font-size: 16px;
@@ -136,6 +137,7 @@
     .paragraph-text {
         width: fit-content;
         margin: auto;
+        font-size: 1.4em;
         color: var(--text-primary);
         transition: color 1000ms ease-in-out;
     }

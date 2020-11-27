@@ -13,6 +13,7 @@ function MLClassification() {
         PREDICTION: 'prediction'
     }
 
+
     const p5ref = React.useRef(null);
     let targetLabel = 'C'
     let model;
@@ -154,7 +155,7 @@ function MLClassification() {
             </p>
             <Steps current={currentStep} >
                 <Step title="Data Collection" description="Start collecting data by inputing letters on the canvas below."></Step>
-                <Step title="Training" description="Click the Train Model button to start training the model to recognize the inputs." />
+                <Step title="Training"  wqr3t description="Click the Train Model button to start training the model to recognize the inputs." />
                 <Step title="Prediction" description="The model has been trained successfully. Click anywhere on the canvas again to see how the model has predicted
                 the letter at each point." />
             </Steps>

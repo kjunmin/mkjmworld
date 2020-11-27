@@ -1,0 +1,134 @@
+@media only screen and (max-width: 1000px) {
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: #17141d;
+    color: white;
+    font-family: "DM Mono", monospace;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  .card-list {
+    display: flex;
+    padding: 3rem;
+  }
+
+  .card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 350px;
+    width: 400px;
+    min-width: 250px;
+    padding: 1.5rem;
+
+    border-radius: 16px;
+    background: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+  }
+  // .project-card-item {
+  //   display: flex;
+  //   height: 280px;
+  //   width: 100%;
+  //   align-items: flex-end;
+  // }
+
+  // .project-card-info {
+  //   background-image: linear-gradient(rgba(33, 37, 43, 0), rgba(33, 37, 43, 0.5), rgb(33, 37, 43));
+  //   width: 100%;
+  //   padding: 1.5em;
+  // }
+
+  // .project-card-title {
+  //   color: rgb(255, 255, 255);
+  // }
+
+  // .project-card-body {
+  //   color: var(--text-primary);
+  //   line-height: 1.25em;
+  //   color: rgba(255, 255, 255, 0.8);
+  // }
+}
+
+/* Large screens */
+
+@media only screen and (min-width: 1000px) {
+  .projects-container {
+    justify-content: space-evenly;
+    width: var(--page-content-width-desktop);
+    margin: 2rem auto 2rem auto;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    // background-color: #17141d;
+    color: white;
+    font-family: "DM Mono", monospace;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  .card-list {
+    display: flex;
+    // flex-wrap: wrap;
+    padding: 3rem;
+  }
+
+  .card {
+    display: flex;
+    
+    position: relative;
+    flex-direction: column;
+    height: 350px;
+    width: 400px;
+    min-width: 250px;
+    padding: 1.5rem;
+
+    border-radius: 16px;
+    background: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+
+    transition: 0.2s;
+  }
+
+  .card:hover {
+    transform: translateY(-1rem);
+  }
+
+  .card:hover ~ .card {
+    transform: translateX(130px);
+  }
+
+  .card:not(:first-child) {
+    margin-left: -130px;
+  }
+  // .project-card-item {
+  //   display: flex;
+  //   height: 280px;
+  //   max-width: 600px;
+  //   width: 50%;
+  //   align-items: flex-end;
+  // }
+
+  // .project-card-info {
+  //   background-image: linear-gradient(rgba(33, 37, 43, 0), rgba(33, 37, 43, 0.5), rgb(33, 37, 43));
+  //   width: 100%;
+  //   padding: 1.5em;
+  // }
+
+  // .project-card-title {
+  //   color: rgb(255, 255, 255);
+  // }
+
+  // .project-card-body {
+  //   color: var(--text-primary);
+  //   line-height: 1.25em;
+  //   color: rgba(255, 255, 255, 0.8);
+  // }
+}
