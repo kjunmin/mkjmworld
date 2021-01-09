@@ -11,15 +11,26 @@
     color: white;
   }
 
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: var(--page-content-width-mobile);
+    margin: 1rem auto 1rem auto;
+  }
+
   .card-list {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 3rem;
   }
 
   .card {
     display: flex;
     position: relative;
-    flex-direction: column;
+    flex-direction: row;
     height: 350px;
     width: 400px;
     min-width: 250px;
@@ -82,7 +93,7 @@
 
   .card {
     display: flex;
-    
+
     position: relative;
     flex-direction: column;
     height: 350px;

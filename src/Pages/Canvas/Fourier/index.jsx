@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Sketch from 'react-p5'
 import { isMobile } from 'react-device-detect';
-// import FourierDesciption from './FourierDescription';
+import FourierDesciption from './FourierDescription';
 
 import FourierSeries from './sketch';
 import { Slider } from 'antd';
@@ -68,9 +68,9 @@ function Fourier() {
 
     return (
         <div style={styles.containerStyle}>
-            {/* <FourierDesciption /> */}
+            <FourierDesciption />
             <div style={styles.sliderStyle}>
-                <h2>Number of periodic signal inputs</h2>
+                <p className="paragraph-text">Number of periodic signal inputs</p>
                 <Slider
                     value={seriesNum}
                     onChange={n => updateFourier(n)}
@@ -80,7 +80,10 @@ function Fourier() {
                     step={STEP_SERIES_NUM} />
             </div>
             <br />
-            <Sketch className="p5-canvas" windowResized={handleResize} setup={fourierSketch.setup} draw={fourierSketch.draw} />
+            <div style={styles.canvasContainerStyle}>
+                <Sketch windowResized={handleResize} setup={fourierSketch.setup} draw={fourierSketch.draw} />
+            </div>
+
         </div>
     )
 

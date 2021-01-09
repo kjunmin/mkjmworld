@@ -14,16 +14,11 @@ export const projectList = [
         link: "/sorting"
     },
     {
-        title: "Geospatial ranking of objects in 2d space",
+        title: "P5.js vector processing and visualisation on canvas",
         image: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-        alt: "Geospatial 2D",
-        description: "My FYP project and thesis on the efficient selection of geospatial objects and visualisation in 2D space."
-    },
-    {
-        title: "Europe Street beat",
-        image: "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
-        alt: "instagram",
-        description: "www.instagram.com"
+        alt: "p5js processing",
+        description: "A simple demo using the p5.js engine to render graphical models on a 2D canvas.",
+        link: "/canvas"
     },
     {
         title: "Europe Street beat",

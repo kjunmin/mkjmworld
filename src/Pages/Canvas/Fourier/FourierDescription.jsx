@@ -4,25 +4,17 @@ const RoseDescription = props => {
 
     return (
         <div>
-            <h3 className="header-text">The Rose Function</h3>
+            <h3 className="header-text">Fourier Series</h3>
             <p className="paragraph-text">
-                The Rose is a sinusoid curve resembling the shape of flower petals. The curve was named rhodonea after the Italian mathematician Luigi Guido Grandi
-                who was best known for his work <i>Flores geometrici</i> in 1728 where he studied the Rose Curve.
+                To better visualise this example, set the Number of periodic signal inputs to 1. Using p5.js, we create a simple vector point that travels along the circumference of
+                a circle with a fixed time series. This generates a smooth rotating point on the canvas. From there we are able to extend the point along the x-axis to offset the value 
+                of that point horizontally across the canvas. Next we plot the position of that point on the canvas, at the same time, moving the rest of the points horizontally using the
+                fixed time series specified before. This allows us to create a sinusodial periodic wave. 
             </p>
             <br /><br />
-            <h3>Ring Around the Rosie</h3>
-            <ul>
-                <li>If the value of <i>k</i> is odd, the rose will have <i>k</i> number of petals. </li>
-                <li>If the value of <i>k</i> is even, the rose will have <i>2k</i> number of petals.</li>
-                <li>If <i>k</i> is a half integer (e.g. 1/2, 3/2, 5/2), the curve will have <i>4k</i> petals.</li>
-                <li>If <i>k</i> can be expressed as <i>n ± 1/6</i>, where <i>n</i> is a nonzero integer, the curve will be rose-shaped with <i>12k</i> petals.</li>
-                <li>If <i>k</i> is rational, then the curve is closed and has finite length. If <i>k</i> is irrational, then it is not closed and has infinite length. </li>
-            </ul>
-            <br />
-            <h3>Try It Out Yourself</h3>
-            <p>
-                The value of <i>n</i> and <i>d</i> respectively are directly and inversely related to <i>j=k</i> in the form k = n/d. 
-                Adjust the values of <i>d</i> and <i>n</i> to generate the <i>k</i> value for the Rose Curve.
+            <h3 className="header-text">Try It Out Yourself</h3>
+            <p  className="paragraph-text">
+                By adding more rotating circles to the reference point, we are able to generate a superposition of all waves which collapse to form our sinusoidual square wave.
             </p>
             <br /><br /><br />
         </div>

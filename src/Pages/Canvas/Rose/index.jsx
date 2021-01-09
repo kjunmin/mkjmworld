@@ -77,18 +77,19 @@ const Rose = () => {
         <div style={styles.containerStyle}>
             <RoseDescription />
             <div style={styles.sliderStyle}>
-                <h2>N value</h2>
+                <p className="paragraph-text">N value</p>
                 <Slider
                     value={n}
                     onChange={n => updateRose(n, d)}
                     marks={sliderMarks}
                     min={0}
                     max={MAX_N}
-                    step={STEP_N} />
+                    step={STEP_N}
+                    style={{color: "white"}} />
             </div>
             <br />
             <div style={styles.sliderStyle}>
-                <h2>D Value</h2>
+                <p className="paragraph-text">D Value</p>
                 <Slider
                     value={d}
                     onChange={d => updateRose(n, d)}
