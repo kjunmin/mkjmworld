@@ -76,13 +76,12 @@
   body {
     padding: 0;
     margin: 0;
-    // background-color: #17141d;
-    color: white;
-    font-family: "DM Mono", monospace;
+    color: var(--text-primary);
+    // font-family: "DM Mono", "monospace";
   }
 
   h2 {
-    color: white;
+    color: var(--text-primary);
   }
 
   .card-list {
@@ -102,7 +101,7 @@
     padding: 1.5rem;
 
     border-radius: 16px;
-    background: #17141d;
+    background: var(--bg-primary);
     box-shadow: -1rem 0 3rem #000;
 
     transition: 0.2s;
@@ -119,27 +118,4 @@
   .card:not(:first-child) {
     margin-left: -130px;
   }
-  // .project-card-item {
-  //   display: flex;
-  //   height: 280px;
-  //   max-width: 600px;
-  //   width: 50%;
-  //   align-items: flex-end;
-  // }
-
-  // .project-card-info {
-  //   background-image: linear-gradient(rgba(33, 37, 43, 0), rgba(33, 37, 43, 0.5), rgb(33, 37, 43));
-  //   width: 100%;
-  //   padding: 1.5em;
-  // }
-
-  // .project-card-title {
-  //   color: rgb(255, 255, 255);
-  // }
-
-  // .project-card-body {
-  //   color: var(--text-primary);
-  //   line-height: 1.25em;
-  //   color: rgba(255, 255, 255, 0.8);
-  // }
 }

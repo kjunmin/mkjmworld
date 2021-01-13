@@ -7,6 +7,7 @@
 @import "skills-tab.scss";
 @import "sorting.scss";
 @import "classifer.scss";
+@import "covidpage.scss";
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap");
 
 :root {
@@ -18,6 +19,7 @@
     --bg-secondary: #437fc7;
     --bg-primary: #6daffe;
     --bg-tertiary: #edf6ff;
+    --card-primary: #17141d;
     --navbar-text-primary: #b6b6b6;
     --navbar-text-secondary: #ececec;
     --navbar-primary: #23232e;
@@ -120,7 +122,6 @@
     }
 
     .page-layout-container {
-        width: var(--page-content-width-desktop);
         margin: 0 auto 0 auto;
         color: var(--text-primary);
         transition: color 1000ms ease-in-out;
@@ -128,7 +129,6 @@
 
     .header-text {
         width: fit-content;
-        // margin: auto;
         margin: 15vh auto 4vh auto;
         font-size: 2em;
         color: var(--text-primary);
@@ -151,6 +151,10 @@
 
     .ant-slider-mark-text {
         color: var(--text-primary);
+    }
+
+    .footer-container {
+        margin-top: 20%;
     }
 
 }

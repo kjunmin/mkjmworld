@@ -23,7 +23,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router basename="/mkjmworld">
       <ScrollToTop>
         <div className="root-container" >
           <div className={currTheme} ref={ref}>

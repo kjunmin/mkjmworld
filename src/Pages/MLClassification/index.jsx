@@ -27,6 +27,7 @@ function MLClassification() {
     }
     const [buttonStates, setButtonStates] = React.useState(initialButtonStates);
 
+    
     useEffect(() => {
         if (!p5ref) return;
         myP5 = new p5(MLClassifier, p5ref.current);
