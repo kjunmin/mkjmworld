@@ -1,17 +1,14 @@
 import React from 'react';
 import { isMobile } from 'react-device-detect';
 
-function Bar(props) {
-    const { length, bgc } = props;
+function SortingBar(props) {
+    const { length, cn } = props;
 
-    const styles: any = {
+    const styles = {
         height: isMobile ? length / 2 : length,
-        margin: isMobile ? '0.08rem' : '0.15rem',
-        width: '100%',
-        backgroundColor: bgc
     }
 
-    return <div style={styles} />
+    return <div className={cn} style={styles} />
 }
 
 function SortingDisplay(props) {
@@ -19,17 +16,16 @@ function SortingDisplay(props) {
 
     return (
         <div className="sorting-visual-container">
-            {array === undefined ? null : array.map((num, index) => {
-                if (stepType) {
-                    if (stepElements && stepType === 'comparison' && stepElements.includes(index)) {
-                        return <Bar key={index} length={num} bgc={'yellow'} />
-                    }
-                    if (stepElements && stepType === 'movement' && stepElements.includes(index)) {
-                        return <Bar key={index} length={num} bgc={'red'} />
-                    }
+            {array ? array.map((num, index) => {
+                let sortingClass = 'sorting-bar';
+
+                if (stepElements?.includes(index) && stepType === 'comparison')
+                    sortingClass = 'sorting-bar-cmp'
+                if (stepElements?.includes(index) && stepType === 'movement') {
+                    sortingClass = 'sorting-bar-move'
                 }
-                return <Bar key={index} length={num} bgc={'lightblue'} />
-            })}
+                return <SortingBar cn={sortingClass} key={index} length={num} />
+            }) : null}
         </div>
     )
 }
