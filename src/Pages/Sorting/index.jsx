@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../../css/styles.scss';
 import { Button } from 'antd';
 import SortingDisplay from './SortingDisplay';
 import { useSelector, useDispatch } from 'react-redux';
@@ -59,7 +58,7 @@ function Sorting() {
         return arr;
     }
 
-    const resetScenario = () => {
+    function resetScenario() {
         setCurrentVisual({});
         dispatch(clearStepQueue())
         clearVisualArray();
@@ -77,7 +76,7 @@ function Sorting() {
         setSortButtonDisabled(false);
     }
 
-    const beginVisualisation = async (stepDelay) => {
+    async function beginVisualisation(stepDelay) {
         setIsUiDisabled(true);
 
         const sleep = (stepDelay) => {
@@ -92,7 +91,9 @@ function Sorting() {
     }
 
 
-    const startSort = () => {
+    function startSort() {
+
+        console.log(sortingArray.length)
 
         switch (sortingMethod) {
             case MERGESORT_SELECTION:
@@ -109,7 +110,7 @@ function Sorting() {
         setVisualButtonDisabled(false);
     }
 
-    const selectSortingMethod = (method) => {
+    function selectSortingMethod(method) {
         resetScenario();
         setSortingMethod(method);
     }

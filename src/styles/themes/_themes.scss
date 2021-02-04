@@ -1,0 +1,29 @@
+.light-theme {
+    font-size: 16px;
+    font-family: "Montserrat";
+    --text-primary: #020202e0;
+    --text-secondary: #020202e0;
+    --button-primary: white;
+    --button-secondary: #434eda;
+    --accents: #b9732f;
+    --bg-primary: #e7f0f9;
+    --bg-secondary: #437fc7;
+    --bg-tertiary: white;
+    --bg-constant-backdrop: #E7F0F9;
+    --highlight-primary: #f5dcad;
+}
+
+.dark-theme {
+    font-size: 16px;
+    font-family: "Montserrat";
+    --text-primary: white;
+    --text-secondary: #f5f5f5;
+    --button-primary: #434eda;
+    --button-secondary: white;
+    --accents: #b9732f;
+    --bg-primary: #0c7ef0;
+    --bg-secondary: #434eda;
+    --bg-tertiary: #272727;
+    --bg-constant-backdrop: #E7F0F9;
+    --highlight-primary: #434eda;
+}

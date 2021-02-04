@@ -1,7 +1,6 @@
 import React from 'react';
 import Fourier from './Fourier';
 import Rose from './Rose';
-import '../../css/styles.scss';
 
 function CanvasPage() {
 

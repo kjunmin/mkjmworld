@@ -1,19 +1,20 @@
 import React from 'react';
-import '../../css/styles.scss';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
 import Skills from './Skills';
 
 import Jumbotron from './Jumbotron';
 
-function Home() {
+function Home(props) {
     return (
-        <div>
-            <Jumbotron />
-            <AboutMe />
-            <Skills />
-            <Projects />
-        </div >
+        <>
+            <Jumbotron {...props} />
+            <div className="homepage-container">
+                <AboutMe />
+                <Skills />
+                {/* <Projects /> */}
+            </div>
+        </>
     )
 }
 

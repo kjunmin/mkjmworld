@@ -17,8 +17,6 @@ function ProjectGrid(props) {
 }
 
 
-
-
 function Projects() {
     return (
         <div className="projects-container">

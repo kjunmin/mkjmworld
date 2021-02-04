@@ -1,0 +1,13 @@
+// Import these first to use global variables
+@import "themes/themes";
+@import "constants";
+@import "animation";
+@import "~antd/dist/antd.css";
+
+// Component imports
+@import "components/components";
+@import "homepage/homepage";
+@import "jumbotron/jumbotron";
+@import "pages/pages";
+@import "main";
+@import "footer/footer";

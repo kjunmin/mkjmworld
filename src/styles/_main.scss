@@ -1,0 +1,71 @@
+h1 {
+    font-weight: bold;
+    font-size: 2em;
+    color: var(--text-primary);
+}
+
+p {
+    font-size: 1em;
+    color: var(--text-primary);
+}
+
+@media only screen and (max-width: 600px) {
+    .root-container {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .page-container {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg-tertiary);
+        transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    }
+
+    .slider-label {
+        font-size: 0.8em;
+        color: var(--text-primary);
+        transition: color 1000ms ease-in-out;
+    }
+
+    .ant-slider-mark-text {
+        color: var(--text-primary);
+    }
+}
+
+/* Large screens */
+
+@media only screen and (min-width: 600px) {
+    .root-container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .page-container {
+        background-color: var(--bg-tertiary);
+        margin-left: 5rem;
+        transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    }
+
+    .page-layout-container {
+        margin: 0 auto 0 auto;
+        color: var(--text-primary);
+        transition: color 1000ms ease-in-out;
+    }
+
+    .slider-label {
+        font-size: 1em;
+        color: var(--text-primary);
+        transition: color 1000ms ease-in-out;
+    }
+
+    .ant-slider-mark-text {
+        color: var(--text-primary);
+    }
+
+    .footer-container {
+        margin-top: 20%;
+    }
+
+}
