@@ -93,14 +93,12 @@ function Sorting() {
 
     function startSort() {
 
-        console.log(sortingArray.length)
-
         switch (sortingMethod) {
             case MERGESORT_SELECTION:
                 mergeSortBottomUp([...sortingArray]);
                 break;
             case QUICKSORT_SELECTION:
-                quickSort([...sortingArray], 0, sortingArray.length)
+                quickSort([...sortingArray], 0, sortingArray.length-1)
                 break;
             case HEAPSORT_SELECTION:
                 heapSort([...sortingArray])
