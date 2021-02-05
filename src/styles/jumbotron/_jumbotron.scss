@@ -2,10 +2,10 @@
   .jumbotron {
     transition: background 500ms ease-in-out, color 1000ms ease-in-out;
     width: 100%;
-    height: 95vh;
+    height: 88vh;
 
     &-splash {
-      height: 95vh;
+      height: 88vh;
       width: 100%;
       background-image: url("/resources/Header-Splash.svg");
       background-size: cover;
@@ -14,7 +14,7 @@
 
     &-content-container {
       position: absolute;
-      top: 0;
+      top: 10vh;
       margin: 0 5vw 0 5vw;
       display: flex;
       flex-direction: column;
@@ -38,7 +38,6 @@
       }
     }
   }
-
 }
 
 @media only screen and (min-width: 600px) {
@@ -81,6 +80,4 @@
       }
     }
   }
-
 }
-

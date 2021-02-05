@@ -1,14 +1,14 @@
 import React from 'react';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
-import Skills from './Skills';
+import Skills from './Skills/Skills';
 
 import Jumbotron from './Jumbotron';
 
-function Home(props) {
+function Home() {
     return (
         <>
-            <Jumbotron {...props} />
+            <Jumbotron />
             <div className="homepage-container">
                 <AboutMe />
                 <Skills />

@@ -1,6 +1,6 @@
 import React from 'react';
-import { techSkills, designSkills, utilitySkills } from './skills';
-import Tabs from '../../../LayoutComponents/Tabs';
+import { techSkills, designSkills, utilitySkills } from './skill_list';
+import Tabs from '../../../LayoutComponents/Tabs/Tabs';
 
 function SkillsGrid(props) {
     return (

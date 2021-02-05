@@ -1,8 +1,9 @@
 import React, { createRef, useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import AppRouter from './LayoutComponents/AppRouter';
-import FooterComponent from './LayoutComponents/Footer';
+import AppRouter from './LayoutComponents/AppRouter/AppRouter';
+import FooterComponent from './LayoutComponents/Footer/Footer';
 import ScrollToTop from './LayoutComponents/AppRouter/ScrollToTop';
+import Navbar from './LayoutComponents/NavBar/NavBar';
 
 
 function App() {
@@ -25,8 +26,9 @@ function App() {
       <ScrollToTop>
         <div className="root-container" >
           <div className={currTheme} ref={ref}>
+            <Navbar switchTheme={switchTheme} currTheme={currTheme} />
             <div className="page-container">
-              <AppRouter switchTheme={switchTheme} />
+              <AppRouter />
               <FooterComponent />
             </div>
           </div>

@@ -4,6 +4,20 @@ h1 {
     color: var(--text-primary);
 }
 
+h2 {
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+h3 {
+    color: var(--text-primary);
+}
+
+h4 {
+    font-weight: 500;
+    color: rgb(199, 194, 194);
+}
+
 p {
     font-size: 1em;
     color: var(--text-primary);
@@ -67,5 +81,4 @@ p {
     .footer-container {
         margin-top: 20%;
     }
-
 }

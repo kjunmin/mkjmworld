@@ -17,3 +17,29 @@
     opacity: 1;
   }
 }
+
+@keyframes dropInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes animLine {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+      fill-opacity: 0;
+  }
+  to {
+      fill-opacity: 1;
+  }
+}

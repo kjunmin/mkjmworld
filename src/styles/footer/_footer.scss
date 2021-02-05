@@ -1,19 +1,23 @@
 @media only screen and (max-width: 600px) {
-    .footer-container {
-        display: flex;
-        margin-left: -5rem;
-        background-color: #001529;
-        padding-top: 5vh;
-        padding-bottom: 10vh;
-        margin-bottom: -5rem;
-    }
+    .footer {
+        &-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+        }
 
-    .footer-content {
-        display: flex;
-        flex-direction: column;
-        padding-left: 15vw;
-        margin-left: 5rem;
-        margin-bottom: 5rem;
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 1.6em;
+        }
+
+        &-logo-container {
+            width: 6em;
+        }
     }
 }
 
@@ -50,14 +54,14 @@
     font-size: 17px;
     font-variant: tabular-nums;
     line-height: 1.5;
-    font-feature-settings: "tnum","tnum";
+    font-feature-settings: "tnum", "tnum";
     cursor: pointer;
     background-color: transparent;
     outline: none;
     text-decoration: none;
-    transition: color .3s;
+    transition: color 0.3s;
 }
 
 .footer-link-item:hover {
-    color: #1880ba
+    color: #1880ba;
 }

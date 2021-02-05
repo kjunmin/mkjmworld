@@ -1,0 +1,41 @@
+.navigation {
+    &-bar {
+        width: 100%;
+        height: 10vh;
+        background-color: var(--navbar-colour);
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        transition: all 0.7s ease-in;
+    }
+
+    &-logo {
+        height: 100%;
+        width: 4em;
+        margin-left: 1.1em;
+        margin-top: 1.1em;
+
+        svg {
+            fill-opacity: 0;
+        }
+    }
+
+    &-theme-button {
+        height: 70%;
+        width: 3.8em;
+        margin-right: 1.1em;
+    }
+}
+
+
+@for $i from 1 through 9 {
+    .navigation-logo svg g path:nth-child(#{$i}) {
+        stroke-dasharray: 900;
+        stroke-dashoffset: 900;
+        animation: animLine ease 2s 1s forwards, fill 1.5s 1.7s forwards;
+    }
+}
