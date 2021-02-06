@@ -1,87 +1,179 @@
-.tab {
-    &-button {
-        border: none;
-        background: none;
-        outline: none;
-        padding: 0;
+@media only screen and (max-width: 600px) {
+    .tab {
+        &-button {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 0;
+        }
+
+        &-list {
+            &-active b {
+                top: 0 !important;
+            }
+            &-active i {
+                padding-right: 0.5rem !important;
+                left: 0 !important;
+            }
+            &-active span {
+                position: absolute;
+                width: 24vw;
+                height: 2em;
+                background-color: var(--highlight-primary);
+                top: 0.4vh;
+                left: 2vw;
+                border-radius: 5em;
+                z-index: -1;
+                transition: 0.3s ease-in-out;
+            }
+            &-item {
+                position: relative;
+                text-decoration: none;
+                color: var(--text-secondary);
+                line-height: 1;
+                text-align: center;
+                display: inline-block;
+                width: 33%;
+                padding: 0.6em;
+                box-sizing: border-box;
+                z-index: 2;
+            }
+            &-item i {
+                left: 0;
+                padding-right: 0.2rem;
+            }
+        }
+
+        &-bar-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 1rem auto 1rem auto;
+
+            nav {
+                position: relative;
+                display: block;
+                background-color: var(--bg-primary);
+                padding: 0.5em;
+                width: 100%;
+                border-radius: 40px;
+                transform: scale(1);
+                overflow: hidden;
+
+                button {
+                    b {
+                        position: relative;
+                        font-size: 0.8em;
+                        top: 3em;
+                        transition: 0.3s ease top;
+                    }
+                    &:hover b {
+                        top: 0;
+                    }
+                    i {
+                        position: relative;
+                        z-index: 2;
+                        font-size: 0.8em;
+                        left: 20%;
+                        transition: 0.3s ease left;
+                    }
+                    &:hover i {
+                        padding-right: 0.5rem;
+                        left: 0;
+                    }
+                }
+            }
+        }
     }
+}
 
+@media only screen and (min-width: 600px) {
+    .tab {
+        &-button {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 0;
+        }
 
-    &-list {
-        &-active b {
-            top: 0 !important; 
+        &-list {
+            &-active b {
+                top: 0 !important;
+            }
+            &-active i {
+                padding-right: 0.5rem !important;
+                left: 0 !important;
+            }
+            &-active span {
+                position: absolute;
+                width: 24vw;
+                height: 2em;
+                background-color: var(--highlight-primary);
+                top: 0.4vh;
+                left: 2vw;
+                border-radius: 5em;
+                z-index: -1;
+                transition: 0.3s ease-in-out;
+            }
+            &-item {
+                position: relative;
+                text-decoration: none;
+                color: var(--text-secondary);
+                line-height: 1;
+                text-align: center;
+                display: inline-block;
+                width: 33%;
+                padding: 0.6em;
+                box-sizing: border-box;
+                z-index: 2;
+            }
+            &-item i {
+                left: 0;
+                padding-right: 0.2rem;
+            }
         }
-        &-active i {
-            padding-right: 0.5rem !important;
-            left: 0 !important;
-        }
-        &-active span {
-            position: absolute;
-            width: 24vw;
-            height: 2em;
-            background-color: var(--highlight-primary);
-            top: 0.4vh;
-            left: 2vw;
-            border-radius: 5em;
-            z-index: -1;
-            transition: 0.3s ease-in-out;
-        }
-        &-item {
-            position: relative;
-            text-decoration: none;
-            color: var(--text-secondary);
-            line-height: 1;
-            text-align: center;
-            display: inline-block;
-            width: 33%;
-            padding: 0.6em;
-            box-sizing: border-box;
-            z-index: 2;
-        }
-        &-item i {
-            left: 0;
-            padding-right: 0.2rem;
-        }
-    }
 
-    &-bar-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: var(--page-content-width-mobile);
-        margin: 1rem auto 1rem auto;
+        &-bar-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 1rem auto 1rem auto;
 
-        nav {
-            position: relative;
-            display: block;
-            background-color: var(--bg-primary);
-            padding: 0.5em;
-            width: var(--page-content-width-mobile);
-            border-radius: 40px;
-            transform: scale(1);
-            overflow: hidden;
+            nav {
+                position: relative;
+                display: block;
+                background-color: var(--bg-primary);
+                padding: 0.5em;
+                width: 100%;
+                border-radius: 40px;
+                transform: scale(1);
+                overflow: hidden;
 
-            button {
-                b {
-                    position: relative;
-                    font-size: 0.8em;
-                    top: 3em;
-                    transition: 0.3s ease top;
-                }
-                &:hover b {
-                    top: 0;
-                }
-                i {
-                    position: relative;
-                    z-index: 2;
-                    font-size: 0.8em;
-                    left: 20%;
-                    transition: 0.3s ease left;
-                }
-                &:hover i {
-                    padding-right: 0.5rem;
-                    left: 0;
+                button {
+                    b {
+                        position: relative;
+                        font-size: 0.8em;
+                        top: 3em;
+                        transition: 0.3s ease top;
+                    }
+                    &:hover b {
+                        top: 0;
+                    }
+                    i {
+                        position: relative;
+                        z-index: 2;
+                        font-size: 0.8em;
+                        left: 20%;
+                        transition: 0.3s ease left;
+                    }
+                    &:hover i {
+                        padding-right: 0.5rem;
+                        left: 0;
+                    }
                 }
             }
         }

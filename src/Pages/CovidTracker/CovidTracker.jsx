@@ -18,13 +18,26 @@ function CovidTracker() {
 
     const inputEl = useCallback(node => {
 
+        function handleScrollToZoom(event) {
+            event.preventDefault();
+    
+            throttle(event => {
+                if (event.wheelDelta > 0 && projectionVal < 400) {
+                    setProjectionVal(prev => Math.min(prev + 5, 400));
+                } else if (event.wheelDelta < 0 && projectionVal > 50) {
+                    setProjectionVal(prev => Math.max(prev - 5, 100));
+                }
+            }, 500)(event);
+    
+        }
+
         if (node !== null) {
             node.addEventListener('wheel', handleScrollToZoom, { passive: false })
             return () => {
                 node.removeEventListener('wheel', handleScrollToZoom);
             }
         }
-    }, []);
+    }, [projectionVal]);
 
     const loadApiData = async () => {
         const response = await axios.get(covidApiUrl);
@@ -54,18 +67,7 @@ function CovidTracker() {
         setCloroplethSelection(newSelection);
     }
 
-    const handleScrollToZoom = (event) => {
-        event.preventDefault();
-
-        throttle(event => {
-            if (event.wheelDelta > 0 && projectionVal < 400) {
-                setProjectionVal(prev => Math.min(prev + 5, 400));
-            } else if (event.wheelDelta < 0 && projectionVal > 50) {
-                setProjectionVal(prev => Math.max(prev - 5, 100));
-            }
-        }, 500)(event);
-
-    }
+   
 
     const handleXTranslation = value => {
         setX(value);
