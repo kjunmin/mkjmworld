@@ -23,6 +23,10 @@ p {
     color: var(--text-primary);
 }
 
+li {
+    color: var(--text-primary);
+}
+
 @media only screen and (max-width: 600px) {
     .root-container {
         padding: 0;
@@ -35,6 +39,19 @@ p {
         flex-direction: column;
         background-color: var(--bg-tertiary);
         transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    }
+
+    .content-container {
+        width: var(--page-content-width-mobile);
+        margin: 0px auto 0px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container {
+        width: 100%;
+        overflow-wrap: break-word;
     }
 
     .slider-label {
@@ -54,31 +71,36 @@ p {
     .root-container {
         padding: 0;
         margin: 0;
+        width: 100%;
     }
 
     .page-container {
+        display: flex;
+        flex-direction: column;
         background-color: var(--bg-tertiary);
-        margin-left: 5rem;
         transition: background 500ms ease-in-out, color 1000ms ease-in-out;
     }
 
-    .page-layout-container {
-        margin: 0 auto 0 auto;
-        color: var(--text-primary);
-        transition: color 1000ms ease-in-out;
+    .content-container {
+        width: var(--page-content-width-desktop);
+        margin: 0px auto 0px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container {
+        width: 100%;
+        overflow-wrap: break-word;
     }
 
     .slider-label {
-        font-size: 1em;
+        font-size: 0.8em;
         color: var(--text-primary);
         transition: color 1000ms ease-in-out;
     }
 
     .ant-slider-mark-text {
         color: var(--text-primary);
-    }
-
-    .footer-container {
-        margin-top: 20%;
     }
 }

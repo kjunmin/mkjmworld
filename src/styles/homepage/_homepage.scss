@@ -1,22 +1,2 @@
 @import "about-me";
 @import "skills-tab";
-
-@media only screen and (max-width: 600px) {
-    .homepage-container {
-        width: var(--page-content-width-mobile);
-        margin: 0px auto 0px auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .homepage-container {
-        width: var(--page-content-width-desktop);
-        margin: 0px auto 0px auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}

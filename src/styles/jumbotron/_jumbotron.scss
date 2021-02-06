@@ -7,8 +7,8 @@
     &-splash {
       height: 88vh;
       width: 100%;
-      background-image: url("/resources/Header-Splash.svg");
-      background-size: cover;
+      background-image: url("/resources/svg/header-splash-iphonex.svg");
+      background-size: 100% auto;
       background-repeat: no-repeat;
     }
 
@@ -23,7 +23,7 @@
     }
 
     &-splash-text {
-      padding-top: 20vh;
+      padding-top: 10vh;
       width: 100%;
       font-family: Montserrat;
       font-style: normal;
@@ -43,14 +43,14 @@
 @media only screen and (min-width: 600px) {
   .jumbotron {
     transition: background 500ms ease-in-out, color 1000ms ease-in-out;
-    width: 100%;
+    height: 88vh;
     height: 95vh;
 
     &-splash {
-      height: 95vh;
+      height: 88vh;
       width: 100%;
-      background-image: url("/resources/Header-Splash.svg");
-      background-size: cover;
+      background-image: url("/resources/svg/header-splash-iphonex.svg");
+      background-size: 100% auto;
       background-repeat: no-repeat;
     }
 
